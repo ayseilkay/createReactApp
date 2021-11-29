@@ -1,0 +1,48 @@
+import logo from './logo.svg';
+import './App.css';
+import Header from './components/Header';
+import React from 'react';
+
+function App() {
+
+  //Ekrana sarkı sözunu yazdırabildik.
+// return React.createElement('div',null,'Hic bir kere hayat bayram olmadı yada her nefes alısımız bayramdı')
+
+// Asagıdaki sekilde de bos olarak fragment yer almaktadır.
+// return (
+//   <>
+//    <h1>Hic bir kere hayat bayram olmadı yada her nefes alısımız bayramdı</h1>
+//    <Header /> 
+//   </>
+// );
+
+  //Aşağıdaki yapıyı yukarıdaki sekildede yazabilirim.
+  return (
+    <>
+     <h1 className="dkfd">Hic bir kere hayat bayram olmadı yada her nefes alısımız bayramdı</h1>
+     <Header /> 
+     <label htmlFor="myinput">
+       Name:
+      <input id="myinput"/>
+     </label>
+    </>
+  );
+}
+
+
+export default App;
+
+// Not: Eger div icerisinde baska elementler oldugunu dusunursek;
+//React.createElement yapısı sürekli tekrar etmek durumunda kalacaktı ve bu istediğimiz bir yapı degildir.
+// Bu nedenle jsx yapısı kullanılır.
+// Yani aslında html yazar gibi javascript yazabiliyoruz.
+// Componentları yazarken bas harflerini büyük olarak yazmalısın.
+//Çünkü html etiketleri bas harfi kucuktur ve reactın hangi elementi render edecegini anlaması gerekir.
+// Jsx yapısında bir component yazdıgımızda mutlaka o yazdıgımız componentı kapsayan bir element olmalıdır.Yukarıdaki Header componentına baktıgımızda div ile kapsandıgını görürüz.
+// Burada illa div kullanmak gerekli degildir.
+// <> seklinde direk fragmentta kullanabiliriz.
+// Javascriptin özel tanımlı keywordleri reactda farlı sekilde tanımlanır.
+// Örnegin:
+// class --> className 
+//for --> htmlFor olarak degistirilmistir.
+
