@@ -2,7 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
 import React from 'react';
+import User from './components/User';
 
+// const name = "Ayse"
+// const surName= "İlkay"
+// const isLoggedIn = false
 function App() {
 
   //Ekrana sarkı sözunu yazdırabildik.
@@ -19,12 +23,16 @@ function App() {
   //Aşağıdaki yapıyı yukarıdaki sekildede yazabilirim.
   return (
     <>
-     <h1 className="dkfd">Hic bir kere hayat bayram olmadı yada her nefes alısımız bayramdı</h1>
+    <User name="AKB" surName="Birinci" isLoggedIn ={true} age={26}/>
+     {/* <h1 className="dkfd">Hic bir kere hayat bayram olmadı yada her nefes alısımız bayramdı</h1>
      <Header /> 
      <label htmlFor="myinput">
        Name:
       <input id="myinput"/>
-     </label>
+     </label> */}
+    {/* <h1>{name}{surName}</h1>
+      
+     <h1>{ isLoggedIn ? `Benim adım ${name} , soyadım ${surName} ` :'giris yapmadınız'} </h1> */}
     </>
   );
 }
