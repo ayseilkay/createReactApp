@@ -7,6 +7,25 @@ import User from './components/User';
 // const name = "Ayse"
 // const surName= "İlkay"
 // const isLoggedIn = false
+
+const friends=['Ayse','Ece','Ebru','Firdes'];
+const friends2 = [
+  {
+    id:1,
+    name:"Ayse"
+  }, {
+    id:2,
+    name:"Ece"
+  },
+  {
+    id:3,
+    name:"Firdes"
+  },
+  {
+    id:4,
+    name:"Ebru"
+  }
+]
 function App() {
 
   //Ekrana sarkı sözunu yazdırabildik.
@@ -23,7 +42,12 @@ function App() {
   //Aşağıdaki yapıyı yukarıdaki sekildede yazabilirim.
   return (
     <>
-    <User name="AKB" surName="Birinci" isLoggedIn ={true} age={26}/>
+    <User name="AKB" surName="Birinci" /* isLoggedIn ={true}*/ /*age={"26"}*/ friends= {friends2} address ={
+      {
+        title:"Kozyatagı/İstanbul",
+        zip: 3435
+      }
+    }/>
      {/* <h1 className="dkfd">Hic bir kere hayat bayram olmadı yada her nefes alısımız bayramdı</h1>
      <Header /> 
      <label htmlFor="myinput">
